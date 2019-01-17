@@ -1,0 +1,81 @@
+HTML DO JS
+
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	
+	<body>
+		<h1> Hello World </h1>
+		
+		<table>
+		
+		</table>
+		
+		<script  type="text/javascript" src="yeehaw2.js"> </script>
+	</body>
+	
+</html>
+
+
+JS WERSJA 1
+
+console.log("Hello World - plik zewnetrzny")
+
+console.warn("Tutaj jest blad")
+console.trace("sledzimy tylko")
+console.error("Tutaj jest blad")
+
+let komputer = {
+	ram : 8,
+	monitor : ["DELL" , "DEll"]
+}
+
+console.table(komputer);
+
+console.log("yeehaw stan wayv")
+
+let imie = "Adam";
+let nazwisko = "Kowalski";
+let spacja = " ";
+
+let imie_i_nazwisko2 = `<h1>${imie} ${nazwisko}</h1>`;
+
+document.write(imie_i_nazwisko2)
+	
+console.prompt()
+
+JS WERSJA 2
+
+
+let imie = window.prompt ("Jak masz na imie?");
+
+let Nazwisko = window.prompt ("Jak masz na nazwisko?");
+
+let Telefon = window.prompt ("Jaki masz numer telefonu?");
+
+let Email = window.prompt ("Jaki masz email?");
+
+let Wiek = window.prompt ("Ile masz lat?");
+
+
+
+let tabela = `<table border=1>
+				<tr>
+						<th> Imie </th>
+						<th> Nazwisko </th>
+						<th> Telefon </th>
+						<th> Email </th>
+						<th> Wiek </th>
+				</tr>
+				<tr>
+						<td> ${imie} </td>
+						<td> ${Nazwisko} </td>	
+						<td> ${Telefon} </td>
+						<td> ${Email} </td>
+						<td> ${Wiek} </td>
+				</tr>
+			</table>`
+			
+document.write(tabela);
