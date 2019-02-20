@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> STRONA W js </title>
+		<script> 
+			function budzik() {
+				document.write("Budze sie</br>");
+			}
+			function prysznic() {
+				document.write("Biore Prysznic</br>");
+			}
+			function malowanie() {
+				document.write("Maluje sie </br>");
+			}
+			function sniadanie() {
+				document.write("Jem sniadanie</br>");
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			plec = window.prompt("Podaj plec");
+			wiek = parseInt(window.prompt("Podaj wiek"));
+			budzik();
+			prysznic();
+			if(plec == "kobieta" && wiek > 16) {
+				malowanie();
+			}
+			sniadanie();
+			
+			
+			
+			dzien = new Date().getDay();
+			document.write("Dzis jest ")
+			if(dzien==0){document.write("Niedziela</br>");}
+			if(dzien==1){document.write("Poniedzialek</br>");}
+			if(dzien==2){document.write("Wtorek</br>");}
+			if(dzien==3){document.write("Sroda</br>");}
+			if(dzien==4){document.write("Czwartek</br>");}
+			if(dzien==5){document.write("Piatek</br>");}
+			if(dzien==6){document.write("Sobota</br>");}
+			
+			document.write("Jutro Bedzie  ");
+			switch(dzien + 1){
+			case 0 : {document.write("Niedziela</br>");break;}
+			case 1 : {document.write("Poniedzialek</br>");break;}
+			case 2 : {document.write("Wtorek</br>");break;}
+			case 3 : {document.write("Sroda</br>");break;}
+			case 4 : {document.write("Czwartek</br>");break;}
+			case 5 : {document.write("Piatek</br>");break;}
+			case 6 : {document.write("Sobota</br>");break;}
+			}
+			
+			
+			
+			
+			let liczba = window.prompt("Podaj Liczbe");
+			if(liczba>0){
+				document.write("Liczba Dodatnia</br>");
+			}
+			else{
+				document.write("Liczba ujemna</br>");
+			}
+			if(liczba % 2){
+				document.write("Liczba nieparzysta</br>");
+			}
+			else{
+				document.write("Liczba Parzysta</br>");
+			}
+			
+			
+			for(let i = 100; i<1000; i++){
+				if(i % 10 == 0){
+					document.write( i + " ");
+				}
+			}
+			
+			
+		</script>
+	</body>
+
+</html>
